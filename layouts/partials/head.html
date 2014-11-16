@@ -10,6 +10,6 @@
         <link rel="stylesheet" href="{{ .Site.BaseUrl }}/libraries/normalize.3.0.1.css" />
         <link rel="stylesheet" href="{{ .Site.BaseUrl }}/css/liquorice.css" />
         <link rel="shortcut icon" href="/favicon.ico" />
-        <link rel="alternate" href="{{ .RSSlink }}" type="application/rss+xml" title="{{ .Site.Title }}" />
+        {{with .RSSLink}}<link rel="alternate" href="{{.}}" type="application/rss+xml" />{{end}}
     </head>
     <body class="li-body">
