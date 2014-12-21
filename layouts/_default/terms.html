@@ -5,12 +5,12 @@
         <div class="row">
             <div class="sixteen columns">
                 <h1>{{.Title}}</h1>
-                <ul class="li-article-list">
-                    {{ range $key, $value := .Data.Terms.ByCount }}
-                        <li>
-			<a href="{{ $value.Name | urlize }}"> {{ $value.Name }} </a> {{ $value.Count }}
-                        </li>
-                    {{ end }}
+                <ul>
+                  {{ range $key, $value := .Data.Terms.ByCount }}
+                    <li>
+                      <a href="{{ $value.Name | urlize }}"> {{ $value.Name }} </a> {{ $value.Count }}
+                    </li>
+                  {{ end }}
                 </ul>
             </div>
         </div>
