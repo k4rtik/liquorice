@@ -11,5 +11,8 @@
         <link rel="stylesheet" href="{{ .Site.BaseUrl }}/css/liquorice.css" />
         <link rel="shortcut icon" href="/favicon.ico" />
         {{with .RSSLink}}<link rel="alternate" href="{{.}}" type="application/rss+xml" />{{end}}
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
     </head>
     <body class="li-body">
