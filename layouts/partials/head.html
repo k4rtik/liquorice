@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="{{ .Site.BaseURL }}libraries/normalize.3.0.1.css" />
         <link rel="stylesheet" href="{{ .Site.BaseURL }}css/liquorice.css" />
         <link rel="shortcut icon" href="/favicon.ico" />
-        {{with .RSSLink}}<link rel="alternate" href="{{.}}" type="application/rss+xml" />{{end}}
+        {{ with .OutputFormats.Get "RSS" }}<link rel="alternate" href="{{ .RelPermalink }}" type="application/rss+xml" />{{end}}
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css">
         <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
         <script>hljs.initHighlightingOnLoad();</script>
